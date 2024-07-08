@@ -1,0 +1,165 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section,
+article {
+    margin-bottom: 2rem;
+}
+
+section h2,
+article h2 {
+    margin-bottom: 0.5rem;
+    /* Adjusted from 1rem to 0.5rem */
+    color: #333;
+}
+
+article h3 {
+    margin-bottom: 0.5rem;
+    /* Adjusted from 1rem to 0.5rem */
+    color: #666;
+}
+
+article p {
+    margin-bottom: 0.5rem;
+}
+
+article a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* About container styling */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically on small screens */
+    align-items: center;
+    /* Center items horizontally */
+    text-align: center;
+    /* Center text */
+}
+
+.about-p {
+    margin-left: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #333;
+    /* Adjust the color to match your website's color scheme */
+    margin-bottom: 1rem;
+    /* Space below the profile picture */
+}
+
+.about-description {
+    max-width: 600px;
+    /* Limit width of the description */
+    margin: 0 auto;
+    /* Center the description horizontally */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+        /* Align items horizontally on larger screens */
+        justify-content: center;
+        /* Center items horizontally */
+        text-align: left;
+        /* Align text to the left */
+    }
+
+    .about-description {
+        max-width: 70%;
+        /* Adjusted width for larger screens */
+        margin: 0;
+        /* Remove margin set for smaller screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .about-container {
+        align-items: center;
+        /* Center items vertically on small screens */
+    }
+
+    .profile-pic {
+        margin-bottom: 0.5rem;
+        /* Reduce space below profile picture on small screens */
+    }
+}
