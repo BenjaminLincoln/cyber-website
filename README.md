@@ -1,0 +1,1 @@
+This website documents my progress and learning in the field of cybersecurity. Follow along as I share articles, insights, and resources that I've found helpful.
